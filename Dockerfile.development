@@ -21,5 +21,3 @@ COPY --chown=redis:redis configs/redis.conf /usr/local/etc/redis/redis.conf
 USER redis:redis
 
 CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
-
-# docker build -f Dockerfile.production -t iotportaldevicemanagement-redis .
