@@ -1,0 +1,26 @@
+version_settings(constraint='>=0.22.2')
+
+local_resource(
+    'redis-builder',
+    'docker build -f build/Dockerfile.production -t redis-builder \
+    --build-arg REDIS_USERNAME=iotportaldevicemanagement \
+    --build-arg REDIS_PASSWORD=REa73KiYig6h34iqakg .',
+)
+
+local_resource(
+    'redis_volume',
+    'docker run -d --name=redis-builder -v iotportaldevicemanagement_redis-acl:/etc/redis/acl redis-builder',
+    resource_deps=['redis-builder'],
+)
+
+local_resource(
+    'redis_volume_delete_container',
+    'docker container stop redis-builder && docker container rm redis-builder',
+    resource_deps=['redis_volume'],
+)
+
+docker_build(
+    'iotportaldevicemanagement-redis',
+    '.',
+    dockerfile = 'Dockerfile.development',
+)
