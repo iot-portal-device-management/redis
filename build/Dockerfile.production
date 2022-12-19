@@ -17,6 +17,6 @@ RUN set -eux; \
     chown -R redis:redis /etc/redis/acl/
 
 
-# docker build -f build/Dockerfile.production -t redis-builder --build-arg REDIS_USERNAME=iotportaldevicemanagement --build-arg REDIS_PASSWORD=REa73KiYig6h34iqakg .
+# docker build -f build/Dockerfile.production -t redis-builder --build-arg REDIS_USERNAME=REDIS_USERNAME --build-arg REDIS_PASSWORD=REDIS_PASSWORD .
 # docker run -d --name=redis-builder -v iotportaldevicemanagement_redis-acl:/etc/redis/acl redis-builder
 # docker container stop redis-builder && docker container rm redis-builder
