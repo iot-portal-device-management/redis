@@ -14,4 +14,4 @@ working on this project. Please commit any pull requests against the `main` bran
 ## 📄 License
 
 This project is open-sourced software licensed under the
-[GPL-2.0-or-later license](https://spdx.org/licenses/GPL-2.0-or-later.html).
+[BSD 3-Clause "New" or "Revised" License](https://spdx.org/licenses/BSD-3-Clause.html).
