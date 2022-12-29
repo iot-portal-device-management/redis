@@ -1,3 +1,8 @@
+#
+# Copyright (C) 2021-2023 Intel Corporation
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
 # Defaults
 ARG REDIS_VERSION=7.0.5-alpine3.16
 

@@ -1,3 +1,8 @@
+#
+# Copyright (C) 2021-2023 Intel Corporation
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
 version_settings(constraint='>=0.22.2')
 
 docker_build(
