@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/iot-portal-device-management/redis">
-    IoT Portal Device Management Redis Docker Image
+    Redis Docker Image for IoT Portal Device Management
   </a>
 </h1>
 
