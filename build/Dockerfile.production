@@ -13,7 +13,7 @@ LABEL com.iotportaldevicemanagement.product="iotportaldevicemanagement"
 ARG REDIS_USERNAME=iotportaldevicemanagement
 ARG REDIS_PASSWORD
 
-RUN set -eux; \
+RUN set -euxo pipefail; \
     mkdir -p /etc/redis/acl/; \
     { \
         echo "user default off"; \
